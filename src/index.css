@@ -30,3 +30,8 @@ body {
 .card-img-top {
   padding: 1rem;
 }
+
+.card:hover {
+  scale: 1.07;
+  transition: .3s;
+}
