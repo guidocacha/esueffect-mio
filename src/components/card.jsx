@@ -11,12 +11,13 @@ const Card = () => {
             .then(json => setUsers(json.data));
     }, []);
 
+    // console.log(users);
 
     return (
         <div className='conteiner'>
             {
-                users.map(user => (<div className="card m-5 w-25" style={{ "width": "18rem" }}>
-                    <img className="card-img-top" src={user.avatar} alt="Card image cap" />
+                users.map(user => (<div className="card m-5 w-5" style={{ "width": "18rem" }}>
+                    <img className="card-img-top rounded-circle" src={user.avatar} alt="Card image cap" />
                     <div className="card-body">
                         <h5 className="card-title">{user.first_name} {user.last_name}</h5>
                         <p className="card-text"><b>E-mail:</b> {user.email}</p>
@@ -24,7 +25,6 @@ const Card = () => {
                     </div>
                 </div>))
             }
-
         </div>
     )
 }

@@ -2,6 +2,7 @@ body {
   margin: 0;
   background-image: url('/public/img/fondo.jpg');
   background-attachment: fixed;
+  padding: 1rem 20rem;
 }
 
 .conteiner {
@@ -25,8 +26,8 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
   /* --- */
   color: wheat;
+  padding: 2rem;
+
 }
 
-.card-img-top {
-  padding: 1rem;
-}
+
